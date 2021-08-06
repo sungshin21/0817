@@ -1,5 +1,4 @@
 /* 로고 및 기본 설정 */
-/* 로고 및 기본 설정 */
 #logo{
     width:50px;
     height: 50px;
@@ -8,15 +7,16 @@
 a{text-decoration: none;
 z-index: 5;}
 
-.nav-scroller a:hover{text-decoration: underline;
-color:#000;
-font-size:18px}
+.nav-scroller a:hover{
+    text-decoration: underline;
+    color:#000;
+    font-size:18px;
+}
 
 .text-center{
     font-family: "Do Hyeon", serif;
     font-size: 30px;
-    font-weight: 500;
-    
+    font-weight: 500;  
 }
 
 /* 메뉴바 */
@@ -37,6 +37,7 @@ font-size:18px}
     left:50%;
     transform: translateX(-50%);
 }
+
 /* search-box*/
 #search-box{
     position: absolute;
@@ -48,7 +49,6 @@ font-size:18px}
     margin-right:150px;
     margin-top: -9px;
 }
-
 
 /* 내위치 */
 .toggle {
@@ -204,10 +204,119 @@ footer {
     z-index: 5;
    
     /* 블록 속성 만들기*/
-     display: inline-block; 
-     position:fixed;
-     bottom:20px;
-     right:3%;
+    display: inline-block; 
+    position:fixed;
+    bottom:20px;
+    right:3%;
     opacity:0;
     transition: 0.4s;
+}
+#current2{
+    width: 100px;
+    height: 300px;
+    display: none;
+}
+.dropdown-item:hover > #current2{
+    display: block;
+}
+/* 메뉴 연습 중 */
+/*뒤로가기 버튼*/
+.back{
+    width: 20px;
+    height: 20px;
+    margin-top: 5px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+#sidemenu1{
+    position: fixed;
+    top:0px;
+    left:0px;
+    height: 100vh;
+    width:250px;
+    background-color: aqua;
+    transform: translateX(-100%);
+    transition: .4s;
+}
+#menulist1,#menulist1-0,#menulist1-1,#menulist1-2,#menulist1-3,#menulist1-4,#menulist1-5,#menulist1-6,#menulist1-7,#menulist1-8,#menulist1-9,#menulist1-10{
+    top:50px;
+    position: absolute;
+    list-style: none;
+}
+#sidemenu1-0,#sidemenu2-0{
+    position: fixed;
+    top:0px;
+    left:0px;
+    height: 100vh;
+    width:250px;
+    background-color: rgb(200, 255, 0); 
+    transform: translateX(-100%);
+    transition: .4s;
+    
+}
+#sidemenu1-1,#sidemenu1-2,#sidemenu1-3,#sidemenu1-4,#sidemenu1-5,#sidemenu1-6,#sidemenu1-7,#sidemenu1-8,#sidemenu1-9,#sidemenu1-10{
+    position: fixed;
+    top:0px;
+    left:0px;
+    height: 100vh;
+    width:250px;
+    background-color: rgb(255, 174, 0); 
+    transform: translateX(-100%);
+    transition: .4s;
+    
+}
+#menulist2-0,#menulist2-1,#menulist2-2,#menulist2-3,#menulist2-4,#menulist2-5,#menulist2-6,#menulist2-7,#menulist2-8,#menulist2-9,#menulist2-10{
+    top:50px;
+    position: absolute;
+    list-style: none;
+}
+#sidemenu2-1,#sidemenu2-2,#sidemenu2-3,#sidemenu2-4,#sidemenu2-5,#sidemenu2-6,#sidemenu2-7,#sidemenu2-8,#sidemenu2-9,#sidemenu2-10{
+    position: fixed;
+    top:0px;
+    left:0px;
+    height: 100vh;
+    width:250px;
+    background-color: rgb(255, 174, 0); 
+    transform: translateX(-100%);
+    transition: .4s;
+    
+}
+/* 목표, 설명 팝업창  */
+.explanation{
+    width: 36px;
+    margin-left: -58%;
+}
+.bulb_icon{
+    cursor: pointer;
+    position: absolute;
+    opacity: 0.5;
+    top: 15px;
+    width: auto;
+}
+.close_icon{
+    float: right;
+    width: 20px;
+    cursor: pointer;
+    opacity: 0.5;
+}
+#page{
+    z-index: 10;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    background-color: #8bb6f7;
+    border:1px solid #8bb6f7;  padding:10px;
+    top: 60px;
+    border-radius: 10px;
+    display: none;
+    box-shadow:2px 2px 2px 2px rgba(0, 0, 0, 0.233);
+}
+/* 아이콘 hover 기능 */
+.bulb_icon:hover{
+    background-image: url(/images/question1.png);
+    opacity: 1;
+}
+.close_icon:hover{
+    opacity: 1;
 }
