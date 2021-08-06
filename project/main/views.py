@@ -98,3 +98,9 @@ def cb_p(request):
 
 def cb_e(request):
     return render(request, './충북/충북 맛집.html')
+
+def login(request):
+    return render(request, './로그인, 회원가입/로그인.html')
+
+def signup(request):
+    return render(request, './로그인, 회원가입/회원가입.html')

@@ -54,4 +54,7 @@ urlpatterns = [
     path('충남/맛집/', main.views.cn_e, name="충남맛집"),
     path('충북/명소/', main.views.cb_p, name="충북명소"),
     path('충북/맛집/', main.views.cb_e, name="충북맛집"),
+
+    path('login/', main.views.login, name="로그인"),
+    path('signup/', main.views.signup, name="회원가입"),
 ]
