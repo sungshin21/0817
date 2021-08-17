@@ -37,58 +37,60 @@
 
               <a class="review-contentname1"><img id="review-logo" src="../../static/images/world.png" alt="logo"><p>영업소 등록하기</p></a>  
               <hr>
-              <div class="name">
-                <p class="review-content" style="width: 100%;">아이디 입력</p>
-                <div class="review-commenting">
-                  <textarea class="form-control" aria-label="With textarea"></textarea>            
-                </div>        
-              </div>   
-              
-              <div class="review_rating">
-                <p class="review-content">영업소 지역(서울 / 경기 / 강원 / 경북 / 경남 / 충북 / 충남 / 전북 / 전남 / 제주  중 선택)</p>
-                <div class="review-commenting">
-                  <textarea class="form-control" aria-label="With textarea"></textarea>            
+              <form action="db.php" method="POST">
+
+                <div class="name">
+                  <p class="review-content" style="width: 100%;">아이디 입력</p>
+                  <div class="review-commenting">
+                    <input type="text" name="id" id="id" class="form-control" aria-label="With textarea">      
+                  </div>        
+                </div>   
+                
+                <div class="review_rating">
+                  <p class="review-content">영업소 지역(서울 / 경기 / 강원 / 경북 / 경남 / 충북 / 충남 / 전북 / 전남 / 제주  중 선택)</p>
+                  <div class="review-commenting">
+                    <input type="text" name="place" id="place" class="form-control" aria-label="With textarea">            
+                  </div>
                 </div>
-              </div>
-              <p class="review-content" >영업소 이름 </p> <p class="review-content" style="margin-left: 138px;">영업소 주소 </p>
-              <div class="review-commenting">
-                <textarea class="form-control" aria-label="With textarea"></textarea>            
-                &nbsp;  &nbsp;
-                <textarea class="form-control" aria-label="With textarea"></textarea>           
-              </div>
-              <p class="review-content">상업주 이름</p> <p class="review-content" style="margin-left: 138px;">상업주 전화번호</p>
-
-              <div class="review-commenting">
-                <textarea class="form-control" aria-label="With textarea"></textarea>            
-                &nbsp;  &nbsp;
-                <textarea class="form-control" aria-label="With textarea"></textarea>           
-
-              </div>
-             
-
-              <p class="review-content">영업시간</p>  <p class="review-content" style="margin-left: 155px;">분위기</p> <p class="review-content" style="margin-left: 173px;">추천대상</p>
-              <div class="review-commenting">
-                <textarea class="form-control" aria-label="With textarea"></textarea>  
-                &nbsp;  &nbsp;      
-                <textarea class="form-control" aria-label="With textarea"></textarea>            
-                &nbsp;  &nbsp;
-                <textarea class="form-control" aria-label="With textarea"></textarea>            
-              </div>
-             
-
-              <p class="review-content">영업소에 대한 추가설명</p>
-              <div class="review-commenting">
-                <span class="input-group-text">추가설명</span>
-                <textarea class="form-control" aria-label="With textarea" style="width: 80%; height: 50px;"></textarea>            
-              </div>
-              <div id="submit">
-                <button class="submit" type="submit" _msthash="1634243" _msttexthash="21528260">제출</button>
-              </div>
-    
-            </nav>
-          </div>
-        </div> 
-    
-      </div>
-  </body>
-</html>
+                <p class="review-content" >영업소 이름 </p> <p class="review-content" style="margin-left: 138px;">영업소 주소 </p>
+                <div class="review-commenting">
+                  <input type="text" name="name" id="name" class="form-control" aria-label="With textarea">          
+                  &nbsp;  &nbsp;
+                  <input type="text" name="adress" id="adress" idclass="form-control" aria-label="With textarea">          
+                </div>
+                <p class="review-content">상업주 이름</p> <p class="review-content" style="margin-left: 138px;">상업주 전화번호</p>
+  
+                <div class="review-commenting">
+                  <input type="text" name="user_name" id="user_name" class="form-control" aria-label="With textarea">          
+                  &nbsp;  &nbsp;
+                  <input type="text" name="tel" id="tel" class="form-control" aria-label="With textarea">           
+  
+                </div>
+               
+  
+                <p class="review-content">영업시간</p>  <p class="review-content" style="margin-left: 155px;">분위기</p> <p class="review-content" style="margin-left: 173px;">추천대상</p>
+                <div class="review-commenting">
+                  <input type="text" name="time" id="time" class="form-control" aria-label="With textarea">
+                  &nbsp;  &nbsp;      
+                  <input type="text" name="mood" id="mood" class="form-control" aria-label="With textarea">          
+                  &nbsp;  &nbsp;
+                  <input type="text" name="recommend" id="recommend" class="form-control" aria-label="With textarea">          
+                </div>
+               
+  
+                <p class="review-content">영업소에 대한 추가설명</p>
+                <div class="review-commenting">
+                  <span class="input-group-text">추가설명</span>
+                  <input type="text" name="plus" id="plus" class="form-control" aria-label="With textarea" style="width: 80%; height: 50px;">            
+                </div>
+                <div id="submit">
+                  <input class="submit" type="submit" _msthash="1634243" _msttexthash="21528260">
+                </div>
+              </form>
+              </nav>
+            </div>
+          </div> 
+      
+        </div>
+    </body>
+  </html>
