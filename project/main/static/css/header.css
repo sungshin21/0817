@@ -121,17 +121,6 @@ a{
     text-align: center;
 }
 
-.before_slide {
-    transform: translateY(100%);
-}
-
-.after_slide {
-    transform: translateY(0);
-}
-
-
-
-
 /* 지도 옆 코로나 실시간 업데이트 시간*/
 #corona-19-updateTime{
     margin-top: 4%;
