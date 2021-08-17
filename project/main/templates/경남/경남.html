@@ -513,16 +513,31 @@
             <hr>
           </div>
         </main>
-    <!--grid(먹거리 추천(맛집)&관광명소 누르는 부분) -->
-    <div class="row mb-3">
-      <a class="themed-grid-col1" href="/경남/">Home</a>
-      <a class="themed-grid-col2" href="/경남/맛집">먹거리 추천(맛집)</a>
-      <a class="themed-grid-col3" href="/경남/명소">관광명소</a>
-    </div>
+  <!--grid(먹거리 추천(맛집)&관광명소 누르는 부분) -->
+  <div class="row mb-3">
+    <a class="col themed-grid-col1" href="/경기/">Home</a>
+    <a class="col themed-grid-col2" href="/경기/맛집/">먹거리 추천(맛집)</a>
+    <a class="col themed-grid-col3" href="/경기/명소/">관광명소</a>
+  </div>
 
     <main class="container">
       <div class="background">
-      <h2 class="home_title" >Today's PICK</h2>
+        <h2 class="home_title" > Today's PICK</h2>
+        <div id="covid-19-newCase">
+          <hn>오늘의 신규 확진자 수:&nbsp;</hn>
+          <script>
+            $.ajax({
+                method: "GET",
+                url: "https://api.corona-19.kr/korea/country/new/?serviceKey=7TNc6tdHG3bajrI9VBeAoUPpgCMO8Ww2u",
+  
+            })
+                .done(function (msg) {
+                    console.log(msg);
+                    console.log(msg.gyeongnam);
+                    $( "hn" ).append( "<strong>"+ msg.gyeongnam.newCase+"</strong>" );
+                });
+          </script>
+        </div>
       <a href="/경남/명소/온더선셋">
         <div class="card">
           <div class="row g-0">
