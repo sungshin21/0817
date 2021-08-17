@@ -380,12 +380,16 @@ def mongsang(request):
     return render(request, './제주/맛집/몽상드애월.html')
 def olae(request):
     return render(request, './제주/맛집/올래국수.html')
+def cafenoted(request):
+    return render(request, './제주/맛집/카페 노티드 제주.html')
 def pigreview(request):
     return render(request, './제주/맛집 리뷰작성/돈사돈리뷰작성.html')
 def mongsangreview(request):
     return render(request, './제주/맛집 리뷰작성/몽상드애월리뷰작성.html')
 def olaereview(request):
     return render(request, './제주/맛집 리뷰작성/올래국수리뷰작성.html')
+def cafenotedreview(request):
+    return render(request, './제주/맛집 리뷰작성/노티드리뷰작성.html')
 
 def sungsan(request):
     return render(request, './제주/명소/성산일출봉.html')

@@ -206,9 +206,11 @@ urlpatterns = [
     path('제주/맛집/돈사돈/', main.views.pig, name="돈사돈"),
     path('제주/맛집/몽상드애월/', main.views.mongsang, name="몽상드애월"),
     path('제주/맛집/올래국수/', main.views.olae, name="올래국수"),
+    path('제주/맛집/카페 노티드 제주/', main.views.cafenoted, name="카페노티드제주"),
     path('제주/맛집/돈사돈/리뷰/', main.views.pigreview, name="돈사돈리뷰"),
     path('제주/맛집/몽상드애월/리뷰/', main.views.mongsangreview, name="몽상드애월리뷰"),
     path('제주/맛집/올래국수/리뷰/', main.views.olaereview, name="올래국수리뷰"),
+    path('제주/맛집/카페 노티드 제주/리뷰/', main.views.cafenotedreview, name="카페노티드제주리뷰"),
 
     path('제주/명소/성산일출봉/', main.views.sungsan, name="성산일출봉"),
     path('제주/명소/안돌오름/', main.views.andol, name="안돌오름"),
