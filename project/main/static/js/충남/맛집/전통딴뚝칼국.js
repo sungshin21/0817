@@ -26,7 +26,7 @@ function displayLocation(position) {
     var longitude = position.coords.longitude;
     
     var distance = computeDistance(position.coords, ourCoords);
-    $("#distance").html("당신과 목포집 사이의 대략적인 거리:"+distance.toFixed(1)+"km");
+    $("#distance").html("당신과 전통딴뚝칼국수 사이의 대략적인 거리:"+distance.toFixed(1)+"km");
                         
 }
 
