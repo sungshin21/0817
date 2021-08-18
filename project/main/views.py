@@ -3,6 +3,8 @@ from django.views.generic.base import TemplateView
 from django.views.generic.edit import CreateView
 from django.contrib.auth.forms import UserCreationForm
 from django.urls import reverse_lazy
+from django.shortcuts import render
+from django.contrib.auth.views import LoginView
 # from .models import Post
 # 왜있몰
 # from django.utils import timezone

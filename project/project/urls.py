@@ -25,7 +25,7 @@ import main.views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    # path('', include('main.urls')),
+    path('', include('main.urls')),
     path('', main.views.main, name='메인화면'),
     path('서울/', main.views.seoul, name='서울'),
     path('경기/', main.views.gg, name='경기'),
@@ -59,8 +59,9 @@ urlpatterns = [
     path('충북/명소/', main.views.cb_p, name="충북명소"),
     path('충북/맛집/', main.views.cb_e, name="충북맛집"),
 
-    path('login/', main.views.login, name="로그인"),
-    path('signup/', main.views.signup, name="회원가입"),
+    # path('login/', main.views.login, name="로그인"),
+    # path('signup/', main.views.signup, name="회원가입"),
+
     path('register/', main.views.register, name="장소 등록하기"),
     
     path('강원/맛집/감자옹심이/', main.views.potato, name="감자옹심이"),
