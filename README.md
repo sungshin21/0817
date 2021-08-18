@@ -13,7 +13,9 @@
 4. 
 
 [로그인, 회원가입 절차]
-1. 
+1. $ python manage.py createsuperuser 입력
+2. 비밀번호까지 입력 후 (http://127.0.0.1:8000/admin/)으로 이동
+3. 회원가입한 사용자 확인 가능
 
 [영업소 등록하기 절차]
 1. XAMPP 설치(https://www.apachefriends.org/download.html)
